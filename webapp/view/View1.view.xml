@@ -8,7 +8,15 @@
         <App id="app">
             <pages>
                 <Page id="page" title="{i18n>title}">
-                    <content />
+                    <content >
+                    	<List
+		headerText="Products"
+		items="{path : 'oProductTable>/'}" >
+		<StandardListItem
+			title="{oProductTable>ProductName}"
+			description="{oProductTable>ID}"/>
+	</List>
+                    </content>
                 </Page>
             </pages>
         </App>
